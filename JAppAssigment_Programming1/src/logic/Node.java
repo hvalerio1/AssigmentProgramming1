@@ -10,62 +10,71 @@ package logic;
  * @author Estudiante
  */
 public class Node {
-    private Node node;
-    private Node node1;
-    private Node node2;
-    private Node node3;
-    private Node node4;
-    private Node node5;
+    private Node up_left;
+    private Node up_right;
+    private Node left;
+    private Node right;
+    private Node down_left;
+    private Node down_right;
+    
+    private boolean active;
+    private int color; // 1 naranja , 2 azul
 
     public Node() {
+        this.active = false;
+        this.color = 0;
     }
 
-    public Node getNode() {
-        return node;
+    public Node getUp_left() {
+        return up_left;
     }
 
-    public void setNode(Node node) {
-        this.node = node;
+    public void setUp_left(Node up_left) {
+        this.up_left = up_left;
     }
 
-    public Node getNode1() {
-        return node1;
+    public Node getUp_right() {
+        return up_right;
     }
 
-    public void setNode1(Node node1) {
-        this.node1 = node1;
+    public void setUp_right(Node up_right) {
+        this.up_right = up_right;
     }
 
-    public Node getNode2() {
-        return node2;
+    public Node getLeft() {
+        return left;
     }
 
-    public void setNode2(Node node2) {
-        this.node2 = node2;
+    public void setLeft(Node left) {
+        this.left = left;
     }
 
-    public Node getNode3() {
-        return node3;
+    public Node getRight() {
+        return right;
     }
 
-    public void setNode3(Node node3) {
-        this.node3 = node3;
+    public void setRight(Node right) {
+        this.right = right;
     }
 
-    public Node getNode4() {
-        return node4;
+    public Node getDown_left() {
+        return down_left;
     }
 
-    public void setNode4(Node node4) {
-        this.node4 = node4;
+    public void setDown_left(Node down_left) {
+        this.down_left = down_left;
     }
 
-    public Node getNode5() {
-        return node5;
+    public Node getDown_right() {
+        return down_right;
     }
 
-    public void setNode5(Node node5) {
-        this.node5 = node5;
+    public void setDown_right(Node down_right) {
+        this.down_right = down_right;
     }
+    
+    
+
+
     
 }
